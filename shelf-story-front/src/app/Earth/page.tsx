@@ -8,7 +8,7 @@ import Clouds from "@/components/Clouds";
 
 export default function BasicThree(){
     const ambientLightIntensity=Math.PI / 2
-    const spotLightIntensity=Math.PI * 2
+    const spotLightIntensity=16
     return (
         <main style={{background: 'red',height: '50rem',display: "flex", alignItems: 'center', justifyContent: 'center'}}>
             <Canvas style={{background: 'black'}}>
