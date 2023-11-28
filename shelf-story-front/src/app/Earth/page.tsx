@@ -9,8 +9,9 @@ import Clouds from "@/components/Clouds";
 export default function BasicThree(){
     const ambientLightIntensity=Math.PI / 2
     const spotLightIntensity=16
+    const canvasHeight = typeof window !== 'undefined' && window.innerHeight
     return (
-        <main style={{background: 'red',height: '50rem',display: "flex", alignItems: 'center', justifyContent: 'center'}}>
+        <main style={{background: 'red',height: canvasHeight || '50rem',display: "flex", alignItems: 'center', justifyContent: 'center'}}>
             <Canvas style={{background: 'black'}}>
                 <ambientLight intensity={ambientLightIntensity} />
                 <pointLight position={[100, 23, 0]} decay={0} intensity={spotLightIntensity} />
